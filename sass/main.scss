@@ -2,6 +2,10 @@
 @import "abstracts/variables.scss";
 @import "base/base.scss";
 @import "base/typography.scss";
+@import "components/menu-list.scss";
+
+@import "layout/container.scss";
 @import "layout/footer.scss";
 @import "layout/header.scss";
+@import "layout/_main-content.scss";
 @import "layout/navigation.scss";

@@ -1,0 +1,28 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
+  .menu-list__item {
+    align-items: flex-end; }
+
+.container {
+  max-width: 120rem;
+  display: flex;
+  margin: 3rem auto; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 15%; }
+
+.main-content {
+  background-color: red;
+  flex: 1 0 0; }
