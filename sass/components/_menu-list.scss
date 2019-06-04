@@ -5,7 +5,7 @@
     &__item{
         
         background-image: linear-gradient(to bottom, $color-primary-light 0%, $color-primary 100%);
-        padding:2rem;
+        
         text-align: right;
         position: relative;
         z-index: 5;
@@ -13,12 +13,12 @@
         &::before{
             content: "";
             height: 100%;
-            width:1%;
+            width:0;
             position: absolute;
             top:0;
             left:0;
             background-color: $menu-hover;
-            transition: all .5s;
+            transition: all .3s;
             z-index: -1;
         }
         &:hover::before{
@@ -27,6 +27,7 @@
     }
     &__link{
         display: inline-block;
+        padding:2rem;
         height: 100%;
         width: 100%;
         text-transform: uppercase;
