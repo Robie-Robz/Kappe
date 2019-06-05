@@ -1,5 +1,5 @@
 .grid-box{
-    flex-basis:24rem;
+    flex:1 0 24rem;
     position: relative;
     perspective: 200px;
     
@@ -9,6 +9,7 @@
         display: block;
     }
     &__hover-box{
+
         color: $font-primary;
         text-align: center;
         padding: 2rem;
@@ -16,15 +17,17 @@
         top:0;
         left:0;
         height: 100%;
-        width:100%;
+        width:100%; 
         background-color: rgba($menu-hover,0.9);
         transform: rotateY(121deg);
         transform-origin:left;
         transition: all .33s ease-in-out;
-    
+        opacity: 0;
     }
     &:hover &__hover-box{
          transform: rotateY(0deg);
+        opacity: 1;
+        
     }
     &__heading-2{
         font-size: 2.4rem;
@@ -47,12 +50,13 @@
         border-radius: 50%;
         padding: 2.5rem;
         position: relative;
+        left:50%;
         top:15%;
-        left: 50%;
         transform: translateX(-50%);
+        transition: all .2s;
         &:hover{
-            transform: scale(1.2) translateX(-50%);
-             transform-origin: center;
+            transform: translateX(-50%) scale(1.2);
+            transform-origin: center;
         }
         
     }
@@ -68,3 +72,4 @@
     }
 
 }
+

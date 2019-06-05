@@ -31,8 +31,8 @@ body {
       background-color: #1AB5B3;
       transition: all .3s;
       z-index: -1; }
-    .menu-list__item:hover::before {
-      width: 100%; }
+  .menu-list__item:hover::before, .menu-list__item--active::before {
+    width: 100%; }
   .menu-list__link {
     display: inline-block;
     padding: 2rem;
@@ -45,7 +45,7 @@ body {
     font-weight: 400; }
 
 .grid-box {
-  flex-basis: 24rem;
+  flex: 1 0 24rem;
   position: relative;
   perspective: 200px; }
   .grid-box__image {
@@ -63,9 +63,11 @@ body {
     background-color: rgba(26, 181, 179, 0.9);
     transform: rotateY(121deg);
     transform-origin: left;
-    transition: all .33s ease-in-out; }
+    transition: all .33s ease-in-out;
+    opacity: 0; }
   .grid-box:hover .grid-box__hover-box {
-    transform: rotateY(0deg); }
+    transform: rotateY(0deg);
+    opacity: 1; }
   .grid-box__heading-2 {
     font-size: 2.4rem;
     font-weight: 400; }
@@ -84,11 +86,12 @@ body {
     border-radius: 50%;
     padding: 2.5rem;
     position: relative;
-    top: 15%;
     left: 50%;
-    transform: translateX(-50%); }
+    top: 15%;
+    transform: translateX(-50%);
+    transition: all .2s; }
     .grid-box__link:hover {
-      transform: scale(1.2) translateX(-50%);
+      transform: translateX(-50%) scale(1.2);
       transform-origin: center; }
   .grid-box__icon {
     height: 1.8rem;
