@@ -1,7 +1,10 @@
 .header{
+  
     display: flex;
     flex-direction: column;
     flex:0 0 20%;
+
+   
     background-color: $color-primary-dark;
     
     &__logo-box{

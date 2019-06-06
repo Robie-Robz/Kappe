@@ -105,7 +105,45 @@ body {
 .container {
   max-width: 120rem;
   display: flex;
-  margin: 3rem auto; }
+  margin: 3rem auto;
+  flex-wrap: wrap; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2.8rem 2rem 0 0;
+  background-color: #242b2e;
+  color: #6b7072;
+  font-size: 1.2rem; }
+  .footer__icon-list {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; }
+  .footer__icon-item {
+    margin-left: .8rem; }
+  .footer__icon {
+    height: 2rem;
+    width: 2rem;
+    transition: all .2s; }
+    .footer__icon:hover {
+      transform: scale(1.2); }
+    .footer__icon--facebook {
+      fill: #3b5998; }
+    .footer__icon--twitter {
+      fill: #00acee; }
+    .footer__icon--gplus {
+      fill: #DD4B39; }
+    .footer__icon--linkedin {
+      fill: #0077B5; }
+    .footer__icon--pinterest {
+      fill: #c8232c; }
+    .footer__icon--youtube {
+      fill: #c4302b; }
+    .footer__icon--github {
+      fill: #ffffff; }
+  .footer__copyright {
+    margin: 1.8rem 0rem 1rem;
+    text-align: right; }
 
 .header {
   display: flex;

@@ -1,0 +1,51 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2.8rem 2rem 0 0;
+    background-color: $color-primary-dark;
+    color: $unfocused-color;
+    font-size: 1.2rem;
+    &__icon-list{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+    }
+    &__icon-item{
+        margin-left: .8rem;
+    }
+    &__icon{
+        height:2rem;
+        width:2rem;
+        transition: all .2s;
+    
+        &:hover{
+            transform: scale(1.2); 
+        }
+        &--facebook{
+            fill:#3b5998;
+        }
+        &--twitter{
+            fill:#00acee;
+        }
+        &--gplus{
+            fill:#DD4B39;
+        }
+        &--linkedin{
+            fill:#0077B5;
+        }
+        &--pinterest{
+           fill:#c8232c; 
+        }
+        &--youtube{
+           fill:#c4302b; 
+        }
+        &--github{
+           fill:#ffffff; 
+        }
+        
+    }
+    &__copyright{
+        margin: 1.8rem 0rem 1rem;
+        text-align: right;
+    }
+}
