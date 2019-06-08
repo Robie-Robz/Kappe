@@ -1,3 +1,8 @@
+/*
+ to 935px - Tablet mode
+935px to 1200px is where the normal styles apply
+
+*/
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -16,6 +21,9 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 58.4375em) {
+    .menu-list {
+      display: none; } }
   .menu-list__item {
     background-image: linear-gradient(to bottom, #333B3F 0%, #2E363A 100%);
     text-align: right;
@@ -107,6 +115,12 @@ body {
   display: flex;
   margin: 3rem auto;
   flex-wrap: wrap; }
+  @media (max-width: 75em) {
+    .container {
+      margin: 0; } }
+  @media (max-width: 58.4375em) {
+    .container {
+      flex-direction: column; } }
 
 .footer {
   display: flex;
@@ -115,6 +129,9 @@ body {
   background-color: #242b2e;
   color: #6b7072;
   font-size: 1.2rem; }
+  @media (max-width: 58.4375em) {
+    .footer {
+      display: none; } }
   .footer__icon-list {
     display: flex;
     list-style: none;

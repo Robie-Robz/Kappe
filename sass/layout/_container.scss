@@ -3,4 +3,11 @@
     display:flex;
     margin: 3rem auto;
     flex-wrap: wrap;
+    
+    @include desktop-mode{
+        margin:0;
+    }
+    @include tablet-mode{
+        flex-direction: column;
+    }
 }

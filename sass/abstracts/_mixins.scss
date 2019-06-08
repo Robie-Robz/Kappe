@@ -1,0 +1,13 @@
+//Media queries
+
+/*
+ to 935px - Tablet mode
+935px to 1200px is where the normal styles apply
+
+*/
+@mixin desktop-mode{
+    @media (max-width: $bp-largest){@content};
+}
+@mixin tablet-mode{
+    @media (max-width: $bp-tablet){@content};
+}

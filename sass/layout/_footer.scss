@@ -5,6 +5,9 @@
     background-color: $color-primary-dark;
     color: $unfocused-color;
     font-size: 1.2rem;
+    @include tablet-mode{
+        display: none;
+    }
     &__icon-list{
         display: flex;
         list-style: none;
