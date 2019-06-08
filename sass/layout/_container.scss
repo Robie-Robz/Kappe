@@ -10,4 +10,8 @@
     @include tablet-mode{
         flex-direction: column;
     }
+    @include phone-mode{
+        max-width: 100vw;
+        flex-direction: column;
+    }
 }

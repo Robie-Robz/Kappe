@@ -11,3 +11,6 @@
 @mixin tablet-mode{
     @media (max-width: $bp-tablet){@content};
 }
+@mixin phone-mode{
+    @media (max-width: $bp-phone){@content};
+}
