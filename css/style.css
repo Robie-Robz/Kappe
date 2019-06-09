@@ -116,6 +116,9 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     fill: #fff; }
+  .grid-box--hidden {
+    visibility: hidden;
+    height: 0rem; }
 
 .container {
   max-width: 120rem;

@@ -78,6 +78,9 @@
         fill:$font-primary;
         
     }
-
+    &--hidden{
+        visibility: hidden;
+        height:0rem;
+    }
 }
 
