@@ -1,9 +1,33 @@
 .header{
-  
+    position: relative;
     display: flex;
     flex-direction: column;
     flex:0 0 20%;
     background-color: $color-primary-dark;
+    &__mobile-menu{
+        position: absolute;
+        margin: 1.2rem 1.5rem;
+        height: 6rem;
+        width: 6rem;
+        display: none;
+        border-radius: 50%;
+        @include tablet-mode{
+            display: block;
+        }
+        &:hover{
+            background-color: gainsboro;
+        }
+    }
+    &__mobile-icon{
+        font-size: 4rem;
+        color: black;
+        display: block;
+        text-decoration: none;
+        text-align:center;
+        line-height: 6.5rem;
+        height: 100%;
+        width:100%;
+    }
     
     &__logo-box{
         padding: 1.5rem 3rem;
